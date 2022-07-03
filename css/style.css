@@ -15,7 +15,7 @@ body {
 /* -------- estilo de encabezado-------- */
 .encabezado {
     background-color: hsla(0, 1%, 65%, 0.502);
-
+    
 }
 
 .logo-titulo {
@@ -226,3 +226,5 @@ a {
     width: 200px;
 }
 }
+
+
