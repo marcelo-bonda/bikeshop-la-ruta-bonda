@@ -227,4 +227,16 @@ a {
 }
 }
 
+/* ----animaciones----- */
 
+@keyframes rotate {from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}}
+.logo{
+    animation: 5s rotate linear infinite;
+    transform-origin: 50% 50%;}
+
+
+button:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+}
