@@ -192,3 +192,37 @@ a {
 
 
     /* -----fin footer */
+
+
+    /* -------armado seccion quienes somos------- */
+
+.imagen-salon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.parrafo-1{
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+
+.parrafo-2{
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+.video-somos{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width:700px) {
+    
+.salon{
+    width: 200px;
+}
+}
