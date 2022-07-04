@@ -175,7 +175,10 @@ a {
 
 
 /* -----footer----- */
+
+
 .foot{
+    color: white;
     background-color: black;
     height: 180px;
     margin-top: 40px;
@@ -220,6 +223,7 @@ a {
     align-items: center;
 }
 
+
 @media (max-width:700px) {
     
 .salon{
@@ -239,3 +243,48 @@ a {
         transition: 0.5s;
     }
     
+/* -----fin armado quienes somos------ */
+
+
+
+/* ------armado de pagina productos---------- */
+
+.titulo-2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    margin: 40px;
+    height: 100%;
+    border: solid;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px;
+}
+.caja {
+    border-style: outset;
+    width: 250px;
+    height: 280px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 15px;
+    box-shadow: 5px 5px 2px black;
+    color: white;
+}
+.contenedor-productos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (min-width:575px) {
+    .contenedor-productos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .caja{
+        width: 270px;
+        height:330px;
+        margin: 10px;
+
+    }
+}
