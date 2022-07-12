@@ -10,15 +10,29 @@
     box-shadow: 5px 5px 5px;
 }
 .caja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     border-style: outset;
     width: 250px;
     height: 280px;
     margin-top: 20px;
     text-align: center;
-    font-size: 16px;
+    font-size:x-large;
     border-radius: 15px;
     box-shadow: 5px 5px 2px black;
     color: white;
+    &:hover{
+        transform: scale(1.5);
+        transition: 0.7s;
+        background-color: rgb(64, 35, 138);
+    }
+    .carrito{
+        max-width: 50px;
+        max-height: 50px;
+
+    }
 }
 .contenedor-productos{
     display: flex;
@@ -27,9 +41,9 @@
 }
 
 .img-p{
-    object-fit: contain;
-    max-width: 250px;
-    max-height: 280px;
+    object-fit: cover;
+    width: 230px;
+    height: 140px;
     border-radius: 15px;
 }
 

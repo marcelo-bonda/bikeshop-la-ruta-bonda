@@ -22,13 +22,20 @@
 .preguntas-frecuentes{
     mix-blend-mode: multiply;
     width: 80%;
+    .titulo-pf{
+        margin: 40px;
+        color:$c-terciaro;
+        text-align: center;
+    }
 }
+
 
 @media (min-width: 576px) {
     .contenedor-compras{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        font-size: large;
     }
     
 }
