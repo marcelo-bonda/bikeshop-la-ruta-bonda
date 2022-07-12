@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+
+}
+
+$c-primario: black;
+$c-secundario: white;
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    color: $c-secundario;
+}
+
+body {
+    background: linear-gradient(to top, #c20b17 0%, #453a94 100%);
+    background-size: cover;
+}
+
+
+.navegador-largo {
+    background-color: black;
+    text-align: center;
+    width: 100%;
+
+    ul li {
+        display: inline-block;
+        padding: 10px;
+        margin-left: 10px;
+    }
+}
+
+.encabezado {
+    background-color: hsla(0, 1%, 65%, 0.502);
+}
+
+.contenedor-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsla(0, 1%, 65%, 0.498);
+    background-size: cover;
+}
+
+.logo-titulo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .logo {
+        width: 100px;
+        height: 100px;
+        mix-blend-mode: multiply;
+    }
+
+    .titulo-encabezado {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+/* -----footer----- */
+.foot {
+    background-color: black;
+    height: 180px;
+    margin-top: 40px;
+
+    .titulo-foot {
+        margin: 20px;
+    }
+
+    .redes a i {
+        text-decoration-color: $c-secundario;
+        color: $c-secundario;
+        font-size: 3rem;
+    }
+}
+
+/* -----fin footer */
+
+@media (min-width:576) {
+    .carrusel img {
+        height: 250px;
+    }
+
+}
+
+@media (max-width:997px) {
+    .nav-horizontal {
+        display: none;
+    }
+
+    .carrusel img {
+        height: 180px;
+    }
+
+}
+
+
+@media (min-width: 998px) {
+    .menu-desplegable {
+        display: none;
+    }
+
+    .contenedor {
+        display: none;
+    }
+
+    .logo-titulo {
+        height: 190px;
+    }
+
+    .titulo-encabezado {
+        font-size: 4rem;
+    }
+
+    .encabezado {
+        height: 250px;
+    }
+
+}

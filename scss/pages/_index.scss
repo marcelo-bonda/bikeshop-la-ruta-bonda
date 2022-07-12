@@ -1,0 +1,30 @@
+
+.carrusel img {
+    margin-top: 40px;
+    width: 100%;
+    height: 400px;
+}
+
+@media (min-width:576px) {
+    .caja-productos button {
+        width: 230px;
+        height: 250px;
+    }
+
+}
+
+
+@media (max-width:700px) {
+
+    .salon {
+        width: 200px;
+    }
+}
+
+@media (max-width:997px) {
+    
+    .carrusel img {
+        height: 180px;
+    }
+
+}

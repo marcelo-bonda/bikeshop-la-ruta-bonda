@@ -1,0 +1,39 @@
+/* -----botones de productos index---- */
+.contenedor-titulo {
+    display: flex;
+    justify-content: center;
+.titulo-productos{
+    text-align: center;
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    margin: 40px;
+    height: 100%;
+    border: solid;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px;
+    
+}
+}
+.caja-productos button {
+    background-color: hsla(0, 1%, 65%, 0.502);
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-right: groove;
+    margin-top: 40px;
+    font-size: 20px;
+    width: 180px;
+    height: 200px;
+    box-shadow: 10px 10px 10px;
+}
+
+.caja-productos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &:hover {
+        transform: scale(1.2);
+        transition: 0.5s;
+    }
+}
+
