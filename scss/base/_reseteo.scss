@@ -21,11 +21,16 @@ li {
     color: $c-secundario;
 }
 
+.registro {
+    text-align: end;
+    color: $c-secundario;
+
+}
+
 body {
     background: linear-gradient(to top, #c20b17 0%, #453a94 100%);
     background-size: cover;
 }
-
 
 .navegador-largo {
     background-color: black;
@@ -41,6 +46,19 @@ body {
 
 .encabezado {
     background-color: hsla(0, 1%, 65%, 0.502);
+}
+
+@mixin animacion {
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
 }
 
 .contenedor-1 {
@@ -67,6 +85,9 @@ body {
         width: 100px;
         height: 100px;
         mix-blend-mode: multiply;
+        
+
+
     }
 
     .titulo-encabezado {

@@ -1,0 +1,71 @@
+@media (min-width:576) {
+    .carrusel img {
+        height: 250px;
+    }
+
+}
+
+@media (max-width:997px) {
+    .nav-horizontal {
+        display: none;
+    }
+
+    .carrusel img {
+        height: 180px;
+    }
+
+}
+
+
+@media (min-width: 998px) {
+    .menu-desplegable {
+        display: none;
+    }
+    .contenedor {
+        display: none;
+    }
+
+    .logo-titulo {
+        height: 190px;
+    }
+
+    .titulo-encabezado {
+        font-size: 4rem;
+    }
+
+    .encabezado {
+        height: 250px;
+    }
+
+}
+
+@media (min-width:576px) {
+    .caja-productos button {
+        width: 230px;
+        height: 250px;
+    }
+
+}
+
+
+@media (max-width:700px) {
+
+    .salon {
+        width: 200px;
+    }
+}
+
+@media (min-width:575px) {
+    .contenedor-productos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .caja {
+        width: 270px;
+        height: 330px;
+        margin: 10px;
+
+    }
+}

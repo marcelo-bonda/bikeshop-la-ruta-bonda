@@ -16,6 +16,11 @@ li {
   color: white;
 }
 
+.registro {
+  text-align: end;
+  color: white;
+}
+
 body {
   background: linear-gradient(to top, #c20b17 0%, #453a94 100%);
   background-size: cover;
@@ -312,8 +317,27 @@ main .contacto {
   align-items: center;
   padding: 50px;
   margin-top: 50px;
-  font-size: large;
   color: white;
+  height: 100%;
+  width: 70%;
+  border: solid 2px;
+  border-radius: 15px;
+}
+
+label {
+  padding: 15px;
+  font-size: x-large;
+}
+
+.subtitulo {
+  margin-top: 80px;
+  color: white;
+}
+
+@media (max-width: 576px) {
+  .contacto {
+    font-size: small;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

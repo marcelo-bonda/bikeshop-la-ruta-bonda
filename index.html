@@ -15,57 +15,59 @@
 
 <!---- encabezado de la pagina--- -->
 
-<body>
-    <header class="encabezado">
-        <div class="row">
-            <div class="col-8 col-sm-9 col-md-9 col-lg-12 col-xxl-fluid contenedor-1">
-                <div class="logo-titulo">
-                    <img class="logo" src="./images/logo.png" alt="logo">
-                    <h1 class="titulo-encabezado">Bikeshop La Ruta</h1>
-                </div>
-                <!----- navegador para resolucion grande ------->
-                <div class=" container-fluid navegador-largo">
-                    <nav class="nav-horizontal">
-                        <ul>
-                            <a href="./index.html">
-                                <li>Inicio</li>
-                            </a>
-                            <a href="./pages/quienes-somos.html">
-                                <li>Quienes somos</li>
-                            </a>
-                            <a href="./pages/Productos.html">
-                                <li>Productos</li>
-                            </a>
-                            <a href="./pages/como-comprar.html">
-                                <li>Como Comprar</li>
-                            </a>
-                            <a href="./pages/Contacto.html">
-                                <li>Contacto</li>
-                            </a>
-                        </ul>
-                    </nav>
-                </div>
+<body class="container-fluid">
+    <header class=" row encabezado">
+        <a class="registro" href="./pages/registro.html">Registro</a>
+        <div class="col-8 col-sm-9 col-md-9 col-lg-12 col-xxl-fluid contenedor-1">
+            
+            <div class="logo-titulo">
+                <img class="logo" src="../images/logo.png" alt="logo">
+                <h1 class="titulo-encabezado">Bikeshop La Ruta</h1>
             </div>
-            <!-- navegador para mobile- -->
-            <div class="col-4 col-sm-3 col-md-3 col-lg-11  contenedor-2">
-                <div class="menu-desplegable">
-                    <div class="dropdown">
-                        <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton2"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Menú
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                            <li><a class="dropdown-item active" href="./index.html">Inicio</a></li>
-                            <li><a class="dropdown-item" href="./pages/quienes-somos.html">Quienes somos</a></li>
-                            <li><a class="dropdown-item" href="./pages/Productos.html">Productos</a></li>
-                            <li><a class="dropdown-item" href="./pages/como-comprar.html">Como comprar</a></li>
-                            <li><a class="dropdown-item" href="./pages/Contacto.html">Contacto</a></li>
-                        </ul>
-                    </div>
+        </div>
+        <!-- navegador para mobile- -->
+        <div class="col-4 col-sm-3 col-md-3 col-lg-11  contenedor-2">
+            <div class="menu-desplegable">
+                <div class="dropdown">
+                    <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton2"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Menú
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                        <li><a class="dropdown-item active" href="./index.html">Inicio</a></li>
+                        <li><a class="dropdown-item" href="./pages/quienes-somos.html">Quienes somos</a></li>
+                        <li><a class="dropdown-item" href="./pages/Productos.html">Productos</a></li>
+                        <li><a class="dropdown-item" href="./pages/como-comprar.html">Como comprar</a></li>
+                        <li><a class="dropdown-item" href="./pages/Contacto.html">Contacto</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
+        <!----- navegador para resolucion grande ------->
+        <div class=" container-fluid navegador-largo">
+            <nav class="nav-horizontal">
+                <ul>
+                    <a href="./index.html">
+                        <li>Inicio</li>
+                    </a>
+                    <a href="./pages/quienes-somos.html">
+                        <li>Quienes somos</li>
+                    </a>
+                    <a href="./pages/Productos.html">
+                        <li>Productos</li>
+                    </a>
+                    <a href="./pages/como-comprar.html">
+                        <li>Como Comprar</li>
+                    </a>
+                    <a href="./pages/Contacto.html">
+                        <li>Contacto</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+
     </header>
+
 
 
     <!------------seccion carrusel------------>
@@ -153,16 +155,15 @@
 
 
     <!-----pie de pagina ----->
-    <footer>
-        <footer class="foot container-fluid">
-            <div class="row col-12">
-                <h4 class="titulo-foot text-center fs-1">Seguinos en</h4>
-                <div class="redes d-flex justify-content-evenly">
-                    <a href="https://es-la.facebook.com/" target="_blank"><i class="bi-facebook"></i></a>
-                    <a href="https://www.instagram.com/" target="_blank"><i class="bi-instagram"></i></a>
-                    <a href="https://twitter.com/?lang=es" target="_blank"><i class="bi-twitter"></i></a>
-                </div>
+    <footer class="row foot">
+        <div class="container-fluid col-12">
+            <h4 class="titulo-foot text-center fs-1">Seguinos en</h4>
+            <div class="redes d-flex justify-content-evenly">
+                <a href="https://es-la.facebook.com/" target="_blank"><i class="bi-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="bi-instagram"></i></a>
+                <a href="https://twitter.com/?lang=es" target="_blank"><i class="bi-twitter"></i></a>
             </div>
+        </div>
     </footer>
 
 
