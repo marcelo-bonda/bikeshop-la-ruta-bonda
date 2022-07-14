@@ -1,0 +1,33 @@
+.contenedor-registro {
+    @include d-flex (column, center);
+    font-family: map-get($fuentes, secundaria);
+
+    .inicio {
+        @include d-flex(column, center);
+        text-align: center;
+        width: 80%;
+        margin: 20px;
+        border: solid 2px white;
+        border-radius: 15px;
+    }
+    label {
+        color: $c-secundario;
+        margin: 20px;
+        font-size: medium;
+    }
+}
+.registrarme {
+    @extend .inicio;
+}
+.titulo-registro {
+    @include titulo-2;
+    @include d-flex(column, center);
+    width: 80%;
+}
+
+@media (min-width:900px) {
+    .inicio label {
+        font-size: x-large;
+    }
+
+}

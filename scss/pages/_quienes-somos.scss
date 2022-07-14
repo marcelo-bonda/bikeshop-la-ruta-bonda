@@ -1,3 +1,7 @@
+.titulo-quienes{
+    @include titulo-2;
+}
+
 .imagen-salon{
     display: flex;
     flex-direction: column;

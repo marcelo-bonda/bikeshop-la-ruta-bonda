@@ -10,21 +10,24 @@ main .contacto {
     width: 70%;
     border:solid 2px ;
     border-radius: 15px;
+    font-family: map-get($fuentes, secundaria );
 
 }
 label{
-    padding: 15px;
+    padding: 10px;
     font-size: x-large;
 }
 
 .subtitulo{
     margin-top: 80px;
+    text-align: center;
+    font-family: map-get($fuentes, secundaria );
     color:$c-secundario;
 }
 
 @media (max-width:576px) {
     .contacto{
-        font-size: small;
+        font-size:x-small;
     }
     
     

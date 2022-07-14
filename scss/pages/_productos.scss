@@ -1,13 +1,6 @@
 
 .titulo-2 {
-    text-align: center;
-    font-size: 2.5rem;
-    color: white;
-    margin: 40px;
-    height: 100%;
-    border: solid;
-    border-radius: 15px;
-    box-shadow: 5px 5px 5px;
+    @include titulo-2;
 }
 .caja {
     display: flex;
@@ -35,9 +28,7 @@
     }
 }
 .contenedor-productos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include d-flex (column, center);
 }
 
 .img-p{
@@ -55,6 +46,7 @@
     }
 
     .caja {
+        font-family: map-get($fuentes,secundaria );
         width: 270px;
         height: 330px;
         margin: 10px;

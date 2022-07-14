@@ -4,20 +4,17 @@
   padding: 0%;
 }
 
+p {
+  font-family: "Overpass";
+}
+
 ul {
   list-style-type: none;
 }
-
-a {
+ul a {
   text-decoration: none;
 }
-
-li {
-  color: white;
-}
-
-.registro {
-  text-align: end;
+ul li {
   color: white;
 }
 
@@ -26,15 +23,48 @@ body {
   background-size: cover;
 }
 
+@media (min-width: 576) {
+  .carrusel img {
+    height: 250px;
+  }
+}
+@media (max-width: 997px) {
+  .nav-horizontal {
+    display: none;
+  }
+  .carrusel img {
+    height: 180px;
+  }
+}
+@media (min-width: 998px) {
+  .menu-desplegable {
+    display: none;
+  }
+  .contenedor {
+    display: none;
+  }
+  .logo-titulo {
+    height: 190px;
+  }
+  .encabezado {
+    height: 250px;
+  }
+}
+.registro {
+  text-align: end;
+  color: white;
+}
+
 .navegador-largo {
   background-color: black;
   text-align: center;
-  width: 100%;
 }
 .navegador-largo ul li {
   display: inline-block;
   padding: 10px;
   margin-left: 10px;
+  font-family: "Overpass";
+  font-size: x-large;
 }
 
 .encabezado {
@@ -69,7 +99,13 @@ body {
 .logo-titulo .titulo-encabezado {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  font-family: "Splash";
+}
+@media (min-width: 700px) {
+  .logo-titulo .titulo-encabezado {
+    font-size: 4rem;
+  }
 }
 
 /* -----footer----- */
@@ -97,6 +133,9 @@ body {
   .nav-horizontal {
     display: none;
   }
+  .registro {
+    display: none;
+  }
   .carrusel img {
     height: 180px;
   }
@@ -115,9 +154,48 @@ body {
     font-size: 4rem;
   }
   .encabezado {
-    height: 250px;
+    height: 300px;
   }
 }
+/* -----botones de productos index---- */
+.contenedor-titulo {
+  display: flex;
+  justify-content: center;
+}
+.contenedor-titulo .titulo-productos {
+  text-align: center;
+  font-family: "Overpass";
+  font-size: 2.5rem;
+  color: white;
+  margin: 40px;
+  border: solid 2px;
+  border-radius: 15px;
+  box-shadow: 5px 2px 2px;
+}
+
+.caja-productos button {
+  background-color: hsla(0deg, 1%, 65%, 0.502);
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-right: groove;
+  margin-top: 40px;
+  font-size: 20px;
+  width: 180px;
+  height: 200px;
+  box-shadow: 10px 10px 10px;
+}
+
+.caja-productos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Overpass";
+}
+.caja-productos:hover {
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+
 .carrusel img {
   margin-top: 40px;
   width: 100%;
@@ -140,43 +218,15 @@ body {
     height: 180px;
   }
 }
-/* -----botones de productos index---- */
-.contenedor-titulo {
-  display: flex;
-  justify-content: center;
-}
-.contenedor-titulo .titulo-productos {
+.titulo-quienes {
   text-align: center;
-  text-align: center;
+  font-family: "Overpass";
   font-size: 2.5rem;
   color: white;
   margin: 40px;
-  height: 100%;
-  border: solid;
+  border: solid 2px;
   border-radius: 15px;
-  box-shadow: 5px 5px 5px;
-}
-
-.caja-productos button {
-  background-color: hsla(0deg, 1%, 65%, 0.502);
-  border-top-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  border-right: groove;
-  margin-top: 40px;
-  font-size: 20px;
-  width: 180px;
-  height: 200px;
-  box-shadow: 10px 10px 10px;
-}
-
-.caja-productos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.caja-productos:hover {
-  transform: scale(1.2);
-  transition: 0.5s;
+  box-shadow: 5px 2px 2px;
 }
 
 .imagen-salon {
@@ -207,13 +257,13 @@ body {
 
 .titulo-2 {
   text-align: center;
+  font-family: "Overpass";
   font-size: 2.5rem;
   color: white;
   margin: 40px;
-  height: 100%;
-  border: solid;
+  border: solid 2px;
   border-radius: 15px;
-  box-shadow: 5px 5px 5px;
+  box-shadow: 5px 2px 2px;
 }
 
 .caja {
@@ -261,6 +311,7 @@ body {
     justify-content: space-around;
   }
   .caja {
+    font-family: "Overpass";
     width: 270px;
     height: 330px;
     margin: 10px;
@@ -278,6 +329,7 @@ body {
   align-items: center;
   text-align: center;
   margin-top: 50px;
+  font-family: "Overpass";
 }
 
 .contenedor-compras {
@@ -322,21 +374,66 @@ main .contacto {
   width: 70%;
   border: solid 2px;
   border-radius: 15px;
+  font-family: "Overpass";
 }
 
 label {
-  padding: 15px;
+  padding: 10px;
   font-size: x-large;
 }
 
 .subtitulo {
   margin-top: 80px;
+  text-align: center;
+  font-family: "Overpass";
   color: white;
 }
 
 @media (max-width: 576px) {
   .contacto {
-    font-size: small;
+    font-size: x-small;
+  }
+}
+.contenedor-registro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Overpass";
+}
+.contenedor-registro .inicio, .contenedor-registro .registrarme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 80%;
+  margin: 20px;
+  border: solid 2px white;
+  border-radius: 15px;
+}
+.contenedor-registro label {
+  color: white;
+  margin: 20px;
+  font-size: medium;
+}
+
+.titulo-registro {
+  text-align: center;
+  font-family: "Overpass";
+  font-size: 2.5rem;
+  color: white;
+  margin: 40px;
+  border: solid 2px;
+  border-radius: 15px;
+  box-shadow: 5px 2px 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+@media (min-width: 900px) {
+  .inicio label, .registrarme label {
+    font-size: x-large;
   }
 }
 

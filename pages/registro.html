@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Splash&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="../css/style.css">
     <title>Bikeshop la ruta</title>
 </head>
@@ -61,7 +64,31 @@
         </div>
 
     </header>
+    <form class="row contenedor-registro">
+        
+        <div class="container-fluid inicio">
+            <h2 class="titulo-registro">Inicio de sesión</h2>
+            <label for="usaurio">Usuario o email registrado</label>
+            <input type="text" id="campo-usuario" required placeholder="ejemplo@ejemplo.com">
+            <label for="contra">Contraseña</label>
+            <input type="password" id="contra">
+            <input type="submit" id="ingresar">
+        </div>
 
+
+        
+        <div class="container-fluid registrarme">
+            <h2 class="titulo-registro">Registrate</h2>
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" placeholder="ejemplo@ejemplo.com">
+            <label for="contra">Crea una Contraseña</label>
+            <input type="password" id="contra">
+            <label for="contra">Confirmar contraseña</label>
+            <input type="password" id="contra">
+            <label for="ingresar">Crear usuario</label>
+            <input type="submit" name="" id="ingresar">
+        </div>
+    </form>
 
 
     <!-----pie de pagina ----->
