@@ -3,7 +3,7 @@
   margin: 0%;
   padding: 0%;
 }
-
+/* generalidades para todo el sitio */
 p {
   font-family: "Overpass";
 }
@@ -22,7 +22,7 @@ body {
   background: linear-gradient(to top, #c20b17 0%, #453a94 100%);
   background-size: cover;
 }
-
+/* ----media querys navegadores e index------ */
 @media (min-width: 576) {
   .carrusel img {
     height: 250px;
@@ -49,6 +49,8 @@ body {
   .encabezado {
     height: 250px;
   }
+
+  /* -----especificaciones del navegador------ */
 }
 .registro {
   text-align: end;
@@ -218,6 +220,9 @@ body {
     height: 180px;
   }
 }
+
+
+/* ------seccion pagina quienes somos----- */
 .titulo-quienes {
   text-align: center;
   font-family: "Overpass";
@@ -265,7 +270,7 @@ body {
   border-radius: 15px;
   box-shadow: 5px 2px 2px;
 }
-
+/* ------seccion pagina productos------ */
 .caja {
   display: flex;
   flex-direction: column;
@@ -322,7 +327,7 @@ body {
   height: 150px;
   mix-blend-mode: multiply;
 }
-
+/* ------seccion pagina como-comprar------ */
 .instrucciones {
   display: flex;
   flex-direction: column;
@@ -362,6 +367,8 @@ body {
     width: 50%;
   }
 }
+
+/* ------seccion pagina contacto----- */
 main .contacto {
   text-align: center;
   display: flex;
@@ -394,6 +401,9 @@ label {
     font-size: x-small;
   }
 }
+
+
+/* -------seccion pagina registro----- */
 .contenedor-registro {
   display: flex;
   flex-direction: column;
