@@ -8,76 +8,70 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,200;0,300;1,200;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Splash&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="../css/style.css">
     <title>Bikeshop Quienes somos</title>
 </head>
 
-<body>
+<!---- encabezado de la pagina--- -->
 
-
-    <!------- encabezado de pagina------- -->
-    <header class="encabezado">
-        <div class="row">
-            <div class="col-8 col-sm-9 col-md-9 col-lg-12 contenedor-1">
-                <div class="logo-titulo">
-                    <img class="logo" src="../images/logo.png" alt="logo">
-                    <h1 class="titulo-encabezado">Quienes somos</h1>
-                </div>
-
-            <!----------navegador para resoluciones grandes------- -->
-                <div class="navegador-largo">
-                    <nav class="nav-horizontal">
-                        <ul>
-                            <a href="../index.html">
-                                <li>Inicio</li>
-                            </a>
-                            <a href="./quienes-somos.html">
-                                <li>Quienes somos</li>
-                            </a>
-                            <a href="./Productos.html">
-                                <li>Productos</li>
-                            </a>
-                            <a href="./como-comprar.html">
-                                <li>Como Comprar</li>
-                            </a>
-                            <a href="./Contacto.html">
-                                <li>Contacto</li>
-                            </a>
-                        </ul>
-                    </nav>
-                </div>
-
-
-            <!------navegador para resoluciones pequeñas -------->
+<body class="container-fluid">
+    <header class=" row encabezado">
+        <a class="registro" href="./registro.html">Registro</a>
+        <div class="col-8 col-sm-9 col-md-9 col-lg-12 col-xxl-fluid contenedor-1">
+            <div class="logo-titulo">
+                <img class="logo" src="../images/logo.png" alt="logo">
+                <h1 class="titulo-encabezado">Bikeshop La Ruta</h1>
             </div>
-            <div class="col-4 col-sm-3 col-md-3 col-lg-12  contenedor-2">
-                <div class="menu-desplegable">
-                    <div class="dropdown">
-                        <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton2"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Menú
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                            <li><a class="dropdown-item active" href="../index.html">Inicio</a></li>
-                            <li><a class="dropdown-item" href="./quienes-somos.html">Quienes somos</a></li>
-                            <li><a class="dropdown-item" href="./Productos.html">Productos</a></li>
-                            <li><a class="dropdown-item" href="./como-comprar.html">Como comprar</a></li>
-                            <li><a class="dropdown-item" href="./Contacto.html">Contacto</a></li>
-                        </ul>
-                    </div>
-
-                </div>
-
-            </div>
-
         </div>
+        <!-- navegador para mobile- -->
+        <div class="col-4 col-sm-3 col-md-3 col-lg-11  contenedor-2">
+            <div class="menu-desplegable">
+                <div class="dropdown">
+                    <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton2"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Menú
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                        <li><a class="dropdown-item active" href="../index.html">Inicio</a></li>
+                        <li><a class="dropdown-item" href="./quienes-somos.html">Quienes somos</a></li>
+                        <li><a class="dropdown-item" href="./Productos.html">Productos</a></li>
+                        <li><a class="dropdown-item" href="./como-comprar.html">Como comprar</a></li>
+                        <li><a class="dropdown-item" href="./Contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!----- navegador para resolucion grande ------->
+        <div class=" container-fluid navegador-largo">
+            <nav class="nav-horizontal">
+                <ul>
+                    <a href="../index.html">
+                        <li>Inicio</li>
+                    </a>
+                    <a href="./quienes-somos.html">
+                        <li>Quienes somos</li>
+                    </a>
+                    <a href="./Productos.html">
+                        <li>Productos</li>
+                    </a>
+                    <a href="./como-comprar.html">
+                        <li>Como Comprar</li>
+                    </a>
+                    <a href="./Contacto.html">
+                        <li>Contacto</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+
     </header>
     <main>
-
-        <!--------------contenido conociendo la marca -------- -->
-        <div>
-            <h1 class="titulo text-center">Nuestra historia</h1>
+        <div class="contenedor-titulo">
+            <h1 class="titulo-quienes text-center m-5">Nuestra historia</h1>
         </div>
         <div class=" container-fluid quienes-somos">
             <div class="row">
@@ -104,7 +98,7 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                 </div>
-                
+
             </div>
         </div>
 
@@ -114,8 +108,9 @@
 
     <!---------- pie de pagina---- -->
     <footer>
-        <footer class="foot container-fluid">
-            <div class="row col-12">
+        <!-----pie de pagina ----->
+        <footer class="row foot">
+            <div class="container-fluid col-12">
                 <h4 class="titulo-foot text-center fs-1">Seguinos en</h4>
                 <div class="redes d-flex justify-content-evenly">
                     <a href="https://es-la.facebook.com/" target="_blank"><i class="bi-facebook"></i></a>

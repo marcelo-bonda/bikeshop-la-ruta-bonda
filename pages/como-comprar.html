@@ -8,71 +8,160 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,200;0,300;1,200;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Splash&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="../css/style.css">
     <title>Bikeshop Como Comprar</title>
 </head>
 
-<body>
-    <header class="encabezado">
-        <div class="row">
-            <div class="col-8 col-sm-9 col-md-9 col-lg-12 contenedor-1">
-                <div class="logo-titulo">
-                    <img class="logo" src="../images/logo.png" alt="logo">
-                    <h1 class="titulo-encabezado">Como comprar</h1>
-                </div>
-                <div class="navegador-largo">
-                    <nav class="nav-horizontal">
-                        <ul>
-                            <a href="../index.html">
-                                <li>Inicio</li>
-                            </a>
-                            <a href="./quienes-somos.html">
-                                <li>Quienes somos</li>
-                            </a>
-                            <a href="./Productos.html">
-                                <li>Productos</li>
-                            </a>
-                            <a href="./como-comprar.html">
-                                <li>Como Comprar</li>
-                            </a>
-                            <a href="./Contacto.html">
-                                <li>Contacto</li>
-                            </a>
-                        </ul>
-                    </nav>
+<!---- encabezado de la pagina--- -->
 
-
+<body class="container-fluid">
+    <header class=" row encabezado">
+        <a class="registro" href="./registro.html">Registro</a>
+        <div class="col-8 col-sm-9 col-md-9 col-lg-12 col-xxl-fluid contenedor-1">
+            <div class="logo-titulo">
+                <img class="logo" src="../images/logo.png" alt="logo">
+                <h1 class="titulo-encabezado">Bikeshop La Ruta</h1>
+            </div>
+        </div>
+        <!-- navegador para mobile- -->
+        <div class="col-4 col-sm-3 col-md-3 col-lg-11  contenedor-2">
+            <div class="menu-desplegable">
+                <div class="dropdown">
+                    <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton2"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Menú
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                        <li><a class="dropdown-item active" href="../index.html">Inicio</a></li>
+                        <li><a class="dropdown-item" href="./quienes-somos.html">Quienes somos</a></li>
+                        <li><a class="dropdown-item" href="./Productos.html">Productos</a></li>
+                        <li><a class="dropdown-item" href="./como-comprar.html">Como comprar</a></li>
+                        <li><a class="dropdown-item" href="./Contacto.html">Contacto</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="col-4 col-sm-3 col-md-3 col-lg-12  contenedor-2">
-                <div class="menu-desplegable">
-                    <div class="dropdown">
-                        <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton2"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Menú
+        </div>
+        <!----- navegador para resolucion grande ------->
+        <div class=" container-fluid navegador-largo">
+            <nav class="nav-horizontal">
+                <ul>
+                    <a href="../index.html">
+                        <li>Inicio</li>
+                    </a>
+                    <a href="./quienes-somos.html">
+                        <li>Quienes somos</li>
+                    </a>
+                    <a href="./Productos.html">
+                        <li>Productos</li>
+                    </a>
+                    <a href="./como-comprar.html">
+                        <li>Como Comprar</li>
+                    </a>
+                    <a href="./Contacto.html">
+                        <li>Contacto</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main class="row contenedor-compras">
+        <div class="col-8 col-sm-8 col-md-4 instrucciones">
+            <img class="ilustracion" src="../images/carrito.png" alt="carrito">
+            <h2>Agregá a tu carrito</h2>
+            <p>Seleccioná los productos que quieras, agregalos al carrito o elegí la opción Comprar ahora.</p>
+        </div>
+        <div class="col-8 col-sm-8 col-md-4 instrucciones">
+            <img class="ilustracion" src="../images/pagar.png" alt="pago">
+            <h2>Pagá</h2>
+            <p>Procesamos tu compra en nuestra tienda utilizando la tecnología de Mercado Libre. Te llevaremos para que
+                realices el pago de forma ágil y segura a través de pagos con débito, crédito y efectivo.</p>
+        </div>
+        <div class="col-8 col-sm-8 col-md-4 instrucciones">
+            <img class="ilustracion" src="../images/envio.png" alt="envio">
+            <h2>Recibí</h2>
+            <p>Elegí la forma de entrega que prefieras ¡y listo!</p>
+        </div>
+
+        <div class="row preguntas-frecuentes">
+            <div class="container-fluid">
+                <h2 class="titulo-pf">Preguntas frecuentes</h2>
+            </div>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            ¿Cómo realizo el pago si no tengo cuenta en Mercado Libre?
                         </button>
-                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                            <li><a class="dropdown-item active" href="../index.html">Inicio</a></li>
-                            <li><a class="dropdown-item" href="./quienes-somos.html">Quienes somos</a></li>
-                            <li><a class="dropdown-item" href="./Productos.html">Productos</a></li>
-                            <li><a class="dropdown-item" href="./como-comprar.html">Como comprar</a></li>
-                            <li><a class="dropdown-item" href="./Contacto.html">Contacto</a></li>
-                        </ul>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">¡Crear una cuenta es muy fácil! Al momento de comprar, te
+                            redirigiremos a Mercado Libre para que la crees. Sólo tenés que ingresar un e-mail, una
+                            clave y continuar con tu compra</div>
                     </div>
-
                 </div>
-
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            ¿Dónde veo el costo de envío y el tiempo de entrega?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">En la página del producto que quieras comprar verás la opción de
+                            calcular cuándo llega, con la información sobre el costo de envío y el tiempo de
+                            entrega.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            ¿Cómo puedo realizar cambios y devoluciones?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Los cambios y devoluciones de productos se realizan a través de
+                            Mercado Libre. Podés hacerlo en tu computadora o en la aplicación desde la sección Mis
+                            Compras, seleccionando el producto y luego eligiendo la opción Devolver el producto. Te
+                            daremos una etiqueta de envío para que imprimas y pegues en el paquete para llevarlo al
+                            correo ¡y listo!</div>
+                    </div>
+                </div>
             </div>
 
         </div>
-    </header>
+
+        </div>
+    </main>
+
+    <!-----pie de pagina ----->
+    <footer>
+        <!-----pie de pagina ----->
+        <footer class="row foot">
+            <div class="container-fluid col-12">
+                <h4 class="titulo-foot text-center fs-1">Seguinos en</h4>
+                <div class="redes d-flex justify-content-evenly">
+                    <a href="https://es-la.facebook.com/" target="_blank"><i class="bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="bi-instagram"></i></a>
+                    <a href="https://twitter.com/?lang=es" target="_blank"><i class="bi-twitter"></i></a>
+                </div>
+            </div>
+        </footer>
 
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>

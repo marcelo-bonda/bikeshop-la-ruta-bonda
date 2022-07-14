@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+
+}
+
+$c-primario: black;
+$c-secundario: white;
+$c-terciaro: rgb(12, 12, 77);
+$fuentes: (
+    primaria : 'Splash',
+    secundaria : 'Overpass',
+);
+
+p{
+    font-family: map-get($fuentes, secundaria );
+}
+@mixin d-flex($direction, $aling) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $aling;
+}
+
+
+@mixin titulo-2 {
+    text-align: center;
+    font-family: map-get($fuentes, secundaria );
+    font-size: 2.5rem;
+    color: white;
+    margin: 40px;
+    border: solid 2px;
+    border-radius: 15px;
+    box-shadow: 5px 2px 2px;
+
+}
+
+ul {
+    list-style-type: none;
+
+    a {
+        text-decoration: none;
+    }
+
+    li {
+        color: $c-secundario;
+    }
+}
+
+
+body {
+    background: linear-gradient(to top, #c20b17 0%, #453a94 100%);
+    background-size: cover;
+}
+
+
+
+@media (min-width:576) {
+    .carrusel img {
+        height: 250px;
+    }
+
+}
+
+@media (max-width:997px) {
+    .nav-horizontal {
+        display: none;
+    }
+
+    .carrusel img {
+        height: 180px;
+    }
+
+}
+
+
+@media (min-width: 998px) {
+    .menu-desplegable {
+        display: none;
+    }
+
+    .contenedor {
+        display: none;
+    }
+
+    .logo-titulo {
+        height: 190px;
+    }
+
+
+    .encabezado {
+        height: 250px;
+    }
+
+}

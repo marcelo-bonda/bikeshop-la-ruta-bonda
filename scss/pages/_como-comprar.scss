@@ -1,0 +1,44 @@
+
+.ilustracion{
+    width: 150px;
+    height: 150px;
+    mix-blend-mode: multiply;
+}
+
+.instrucciones{
+    @include d-flex(column, center);
+    text-align: center;
+    margin-top: 50px;
+    font-family: map-get($fuentes, secundaria );
+}
+.contenedor-compras{
+    color:$c-secundario;
+    @include d-flex (column,center);
+}
+
+.preguntas-frecuentes{
+    mix-blend-mode: multiply;
+    width: 80%;
+    .titulo-pf{
+        margin: 40px;
+        color:$c-terciaro;
+        text-align: center;
+    }
+}
+
+
+@media (min-width: 576px) {
+    .contenedor-compras{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: large;
+    }
+    
+}
+@media (min-width:700px) {
+    .preguntas-frecuentes{
+        width: 50%;
+    }
+    
+}

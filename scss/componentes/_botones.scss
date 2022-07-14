@@ -1,0 +1,30 @@
+/* -----botones de productos index---- */
+.contenedor-titulo {
+    display: flex;
+    justify-content: center;
+.titulo-productos{
+    @include titulo-2;
+    
+}
+}
+.caja-productos button {
+    background-color: hsla(0, 1%, 65%, 0.502);
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-right: groove;
+    margin-top: 40px;
+    font-size: 20px;
+    width: 180px;
+    height: 200px;
+    box-shadow: 10px 10px 10px;
+}
+
+.caja-productos {
+    @include d-flex(column,center);
+    font-family:map-get($fuentes, secundaria );
+    &:hover {
+        transform: scale(1.2);
+        transition: 0.5s;
+    }
+}
+

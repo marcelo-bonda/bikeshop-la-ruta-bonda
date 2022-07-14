@@ -8,73 +8,69 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,200;0,300;1,200;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Splash&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="../css/style.css">
     <title>Bikeshop Productos</title>
 </head>
 
-<body>
+<!---- encabezado de la pagina--- -->
 
-    <!-----------encabezado de pagina ------- -->
-    <header class="encabezado">
-        <div class="row">
-            <div class="col-8 col-sm-9 col-md-9 col-lg-12 contenedor-1">
-                <div class="logo-titulo">
-                    <img class="logo" src="../images/logo.png" alt="logo">
-                    <h1 class="titulo-encabezado">Productos</h1>
-                </div>
-
-
-                <!-----------navegador para resoluciones grandes ------->
-                <div class="navegador-largo">
-                    <nav class="nav-horizontal">
-                        <ul>
-                            <a href="../index.html">
-                                <li>Inicio</li>
-                            </a>
-                            <a href="./quienes-somos.html">
-                                <li>Quienes somos</li>
-                            </a>
-                            <a href="./Productos.html">
-                                <li>Productos</li>
-                            </a>
-                            <a href="./como-comprar.html">
-                                <li>Como Comprar</li>
-                            </a>
-                            <a href="./Contacto.html">
-                                <li>Contacto</li>
-                            </a>
-                        </ul>
-                    </nav>
-
-
-                </div>
+<body class="container-fluid">
+    <header class=" row encabezado">
+        <a class="registro" href="./registro.html">Registro</a>
+        <div class="col-8 col-sm-9 col-md-9 col-lg-12 col-xxl-fluid contenedor-1">
+            <div class="logo-titulo">
+                <img class="logo" src="../images/logo.png" alt="logo">
+                <h1 class="titulo-encabezado">Bikeshop La Ruta</h1>
             </div>
-
-            <!------navegador para resoluciones pequeñas ---------->
-            <div class="col-4 col-sm-3 col-md-3 col-lg-12  contenedor-2">
-                <div class="menu-desplegable">
-                    <div class="dropdown">
-                        <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton2"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Menú
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                            <li><a class="dropdown-item active" href="../index.html">Inicio</a></li>
-                            <li><a class="dropdown-item" href="./quienes-somos.html">Quienes somos</a></li>
-                            <li><a class="dropdown-item" href="./Productos.html">Productos</a></li>
-                            <li><a class="dropdown-item" href="./como-comprar.html">Como comprar</a></li>
-                            <li><a class="dropdown-item" href="Contacto.html">Contacto</a></li>
-                        </ul>
-                    </div>
-
-                </div>
-
-            </div>
-
         </div>
+        <!-- navegador para mobile- -->
+        <div class="col-4 col-sm-3 col-md-3 col-lg-11  contenedor-2">
+            <div class="menu-desplegable">
+                <div class="dropdown">
+                    <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton2"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Menú
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                        <li><a class="dropdown-item active" href="../index.html">Inicio</a></li>
+                        <li><a class="dropdown-item" href="./quienes-somos.html">Quienes somos</a></li>
+                        <li><a class="dropdown-item" href="./Productos.html">Productos</a></li>
+                        <li><a class="dropdown-item" href="./como-comprar.html">Como comprar</a></li>
+                        <li><a class="dropdown-item" href="./Contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!----- navegador para resolucion grande ------->
+        <div class=" container-fluid navegador-largo">
+            <nav class="nav-horizontal">
+                <ul>
+                    <a href="../index.html">
+                        <li>Inicio</li>
+                    </a>
+                    <a href="./quienes-somos.html">
+                        <li>Quienes somos</li>
+                    </a>
+                    <a href="./Productos.html">
+                        <li>Productos</li>
+                    </a>
+                    <a href="./como-comprar.html">
+                        <li>Como Comprar</li>
+                    </a>
+                    <a href="./Contacto.html">
+                        <li>Contacto</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+
     </header>
     <main>
+
 
         <!-------seccion mountain bike ------ -->
         <div class="row contenedor-productos">
@@ -83,20 +79,31 @@
                     <h2 id="mtb" class="text-center titulo-2">Mountain bike</h2>
                 </div>
             </div>
-                <div class=" col-6 col-sm-6 col-md-3 col-lg-3 caja">
-                    <h3>vairo xr5.o r29</h3>
-                </div>
-                <div class="col-12 col-sm-6 col-md-3 col-lg-3 caja">
-                    <h3>Raleigh mojave 2.0 r29</h3>
-                </div>
-                <div class="col-12 col-sm-6 col-md-3 col-lg-3 caja">
-                    <h3>Venzo loki</h3>
-                </div>
-                <div class="col-12 col-sm-6 col-md-3 col-lg-3 caja">
-                    <h3>Sunspeed</h3>
-                </div>
+            <div class=" col-6 col-sm-6 col-md-3 col-lg-3 caja">
+                <h3>vairo xr5.o r29</h3>
+                <img class="img-p" src="../images/vayro.jpg" alt="bici-vairo">
+                <img class="carrito" src="../images/carrito-de-compras.png" alt="carrito-de-compras">
+                <p>$130000</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3 caja">
+                <h3>Raleigh mojave 2.0</h3>
+                <img class="img-p" src="../images/raleigh.jpg" alt="bicicleta-raleigh">
+                <img class="carrito" src="../images/carrito-de-compras.png" alt="carrito-de-compras">
+                <p>$90000</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3 caja">
+                <h3>Venzo loki</h3>
+                <img class="img-p" src="../images/venzo.jpg" alt="bicicleta-venzo">
+                <img class="carrito" src="../images/carrito-de-compras.png" alt="carrito-de-compras">
+                <p>$78500</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3 caja">
+                <h3>Sunspeed</h3>
+                <img class="img-p" src="../images/sunspeed.jpg" alt="bicicleta-sunspeed">
+                <img class="carrito" src="../images/carrito-de-compras.png" alt="carrito-de-compras">
+                <p>$180000</p>
+            </div>
         </div>
-
 
         <!----- seccion bicicletas de ruta------->
         <div class="row contenedor-productos">
@@ -105,13 +112,19 @@
                     <h2 class="text-center titulo-2">Bicicletas de ruta</h2>
                 </div>
             </div>
-                <div class=" col-6 caja">
-                    <h3>specialized 2022</h3>
-                </div>
-                <div class="col-6 caja">
-                    <h3>Pinarello Dogma</h3>
-                </div>
-                </div>
+            <div class=" col-6 caja">
+                <h3>specialized 2022</h3>
+                <img src="" alt="">
+                <img class="carrito" src="../images/carrito-de-compras.png" alt="carrito-de-compras">
+                <p>$500000</p>
+            </div>
+            <div class="col-6 caja">
+                <h3>Pinarello Dogma</h3>
+                <img src="" alt="">
+                <img class="carrito" src="../images/carrito-de-compras.png" alt="carrito-de-compras">
+                <p>$870000</p>
+            </div>
+        </div>
         </div>
 
 
@@ -122,15 +135,24 @@
                     <h2 class="text-center titulo-2">triatlón</h2>
                 </div>
             </div>
-                <div class=" col-6 col-sm-6 col-md-3 col-lg-3 caja">
-                    <h3>Cerveló P 5 D-i2</h3>
-                </div>
-                <div class="col-12 col-sm-6 col-md-3 col-lg-3 caja">
-                    <h3>Cerveló p4</h3>
-                </div>
-                <div class="col-12 col-sm-6 col-md-3 col-lg-3 caja">
-                    <h3>Merida Warp</h3>
-                </div>
+            <div class=" col-6 col-sm-6 col-md-3 col-lg-3 caja">
+                <h3>Cerveló P 5 D-i2</h3>
+                <img src="" alt="">
+                <img class="carrito" src="../images/carrito-de-compras.png" alt="carrito-de-compras">
+                <p>$1250000</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3 caja">
+                <h3>Cerveló p4</h3>
+                <img src="" alt="">
+                <img class="carrito" src="../images/carrito-de-compras.png" alt="carrito-de-compras">
+                <p>$600000</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3 caja">
+                <h3>Merida Warp</h3>
+                <img src="" alt="">
+                <img class="carrito" src="../images/carrito-de-compras.png" alt="carrito-de-compras">
+                <p>$360000</p>
+            </div>
         </div>
 
 
@@ -141,15 +163,24 @@
                     <h2 class="text-center titulo-2">Cuadros</h2>
                 </div>
             </div>
-                <div class=" col-6 col-sm-6 col-md-3 col-lg-3 caja">
-                    <h3>Merida reacto 200</h3>
-                </div>
-                <div class="col-12 col-sm-6 col-md-3 col-lg-3 caja">
-                    <h3>Sars Windstar 2.0</h3>
-                </div>
-                <div class="col-12 col-sm-6 col-md-3 col-lg-3 caja">
-                    <h3>Merida reacto 400</h3>
-                </div>
+            <div class=" col-6 col-sm-6 col-md-3 col-lg-3 caja">
+                <h3>Merida reacto 200</h3>
+                <img src="" alt="">
+                <img class="carrito" src="../images/carrito-de-compras.png" alt="carrito-de-compras">
+                <p>$280000</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3 caja">
+                <h3>Sars Windstar 2.0</h3>
+                <img src="" alt="">
+                <img class="carrito" src="../images/carrito-de-compras.png" alt="carrito-de-compras">
+                <p>$65700</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3 caja">
+                <h3>Merida reacto 400</h3>
+                <img src="" alt="">
+                <img class="carrito" src="../images/carrito-de-compras.png" alt="carrito-de-compras">
+                <p>$430500</p>
+            </div>
         </div>
 
 
@@ -160,18 +191,30 @@
                     <h2 class="text-center titulo-2">Repuestos</h2>
                 </div>
             </div>
-                <div class=" col-6 col-sm-6 col-md-3 col-lg-3 caja">
-                    <h3>Transmision Shimano Sora</h3>
-                </div>
-                <div class="col-12 col-sm-6 col-md-3 col-lg-3 caja">
-                    <h3>Transmision Shimano Claris</h3>
-                </div>
-                <div class="col-12 col-sm-6 col-md-3 col-lg-3 caja">
-                    <h3>Transmision Shimano 105</h3>
-                </div>
-                <div class="col-12 col-sm-6 col-md-3 col-lg-3 caja">
-                    <h3>Transmision Shimano Ultegra</h3>
-                </div>
+            <div class=" col-6 col-sm-6 col-md-3 col-lg-3 caja">
+                <h3>Transmision Shimano Sora</h3>
+                <img src="" alt="">
+                <img class="carrito" src="../images/carrito-de-compras.png" alt="carrito-de-compras">
+                <p>$139800</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3 caja">
+                <h3>Transmision Shimano Claris</h3>
+                <img src="" alt="">
+                <img class="carrito" src="../images/carrito-de-compras.png" alt="carrito-de-compras">
+                <p>$146000</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3 caja">
+                <h3>Transmision Shimano 105</h3>
+                <img src="" alt="">
+                <img class="carrito" src="../images/carrito-de-compras.png" alt="carrito-de-compras">
+                <p>$168969</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3 caja">
+                <h3>Transmision Shimano Ultegra</h3>
+                <img src="" alt="">
+                <img class="carrito" src="../images/carrito-de-compras.png" alt="carrito-de-compras">
+                <p>$349000</p>
+            </div>
         </div>
 
 
@@ -182,27 +225,38 @@
                     <h2 class="text-center titulo-2">Indumentaria</h2>
                 </div>
             </div>
-                <div class=" col-6 col-sm-6 col-md-3 col-lg-3 caja">
-                    <h3>Calza corta con badana oslo</h3>
-                </div>
-                <div class="col-12 col-sm-6 col-md-3 col-lg-3 caja">
-                    <h3>Enterito triatlon</h3>
-                </div>
-                <div class="col-12 col-sm-6 col-md-3 col-lg-3 caja">
-                    <h3>Neoprene entero orca</h3>
-                </div>
-                <div class="col-12 col-sm-6 col-md-3 col-lg-3 caja">
-                    <h3>jersey xtres</h3>
-                </div>
-                <div class="col-12 col-sm-6 col-md-3 col-lg-3 caja">
-                    <h3>Zapatos con calas Shimano</h3>
-                </div>
+            <div class=" col-6 col-sm-6 col-md-3 col-lg-3 caja">
+                <h3>Calza corta con badana oslo</h3>
+                <img src="" alt="">
+                <img class="carrito" src="../images/carrito-de-compras.png" alt="carrito-de-compras">
+                <p>$7100</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3 caja">
+                <h3>Enterito triatlon</h3>
+                <img src="" alt="">
+                <img class="carrito" src="../images/carrito-de-compras.png" alt="carrito-de-compras">
+                <p>$8900</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3 caja">
+                <h3>Neoprene entero orca</h3>
+                <img src="" alt="">
+                <img class="carrito" src="../images/carrito-de-compras.png" alt="carrito-de-compras">
+                <p>$45000</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3 caja">
+                <h3>jersey xtres</h3>
+                <img src="" alt="">
+                <img class="carrito" src="../images/carrito-de-compras.png" alt="carrito-de-compras">
+                <p>$4500</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3 caja">
+                <h3>Zapatos con calas Shimano</h3>
+                <img src="" alt="">
+                <img class="carrito" src="../images/carrito-de-compras.png" alt="carrito-de-compras">
+                <p>$24500</p>
+            </div>
         </div>
-
-
-
     </main>
-
 
     <!-----pie de pagina ----->
     <footer>
@@ -215,11 +269,12 @@
                     <a href="https://twitter.com/?lang=es" target="_blank"><i class="bi-twitter"></i></a>
                 </div>
             </div>
-    </footer>
+        </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>

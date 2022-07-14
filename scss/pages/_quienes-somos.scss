@@ -1,0 +1,27 @@
+.titulo-quienes{
+    @include titulo-2;
+}
+
+.imagen-salon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.parrafo-1{
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+
+.parrafo-2{
+    text-align: center;
+    color: white;
+    padding: 15px;
+}
+.video-somos{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
