@@ -1,7 +1,7 @@
-
 .titulo-2 {
     @include titulo-2;
 }
+
 .caja {
     display: flex;
     flex-direction: column;
@@ -12,27 +12,31 @@
     height: 280px;
     margin-top: 20px;
     text-align: center;
-    font-size:x-large;
+    font-size: x-large;
     border-radius: 15px;
     box-shadow: 5px 5px 2px black;
     color: white;
-    &:hover{
+
+    &:hover {
         transform: scale(1.5);
         transition: 0.7s;
         background-color: rgb(64, 35, 138);
+
     }
-    .carrito{
+
+    .carrito {
         max-width: 50px;
         max-height: 50px;
 
     }
 }
-.contenedor-productos{
+
+.contenedor-productos {
     @include d-flex (column, center);
 }
 
-.img-p{
-    object-fit: cover;
+.img-p {
+    object-fit: unset;
     width: 230px;
     height: 140px;
     border-radius: 15px;
@@ -46,10 +50,81 @@
     }
 
     .caja {
-        font-family: map-get($fuentes,secundaria );
+        font-family: map-get($fuentes, secundaria);
         width: 270px;
         height: 330px;
         margin: 10px;
 
+    }
+}
+
+.cont {
+    @extend .caja-productos;
+    
+}
+
+.cont figure {
+    position: relative;
+    height: 100%;
+    cursor: pointer;
+    width: 100%;
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-right: groove;
+    &:hover>img {
+        transform: scale(1.3);
+    }
+    &:hover>.capa h3 {
+        margin-top: 70px;
+        margin-bottom: 15px;
+    }
+    &:hover>.capa {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.cont figure img {
+    width: 230px;
+    height: 250px;
+    transition: all 400ms ease-out;
+    will-change: transform;
+
+}
+
+.cont figure .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 103, 123, 0.7);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+
+.cont figure .capa .t-index {
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 400ms ease-out;
+    margin-top: 30px;
+}
+
+.cont figure .capa p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+@media (max-width:575px) {
+    .cont {
+        display: none;
     }
 }

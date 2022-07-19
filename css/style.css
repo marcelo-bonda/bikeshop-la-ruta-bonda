@@ -3,7 +3,7 @@
   margin: 0%;
   padding: 0%;
 }
-/* generalidades para todo el sitio */
+
 p {
   font-family: "Overpass";
 }
@@ -22,7 +22,7 @@ body {
   background: linear-gradient(to top, #c20b17 0%, #453a94 100%);
   background-size: cover;
 }
-/* ----media querys navegadores e index------ */
+
 @media (min-width: 576) {
   .carrusel img {
     height: 250px;
@@ -49,8 +49,6 @@ body {
   .encabezado {
     height: 250px;
   }
-
-  /* -----especificaciones del navegador------ */
 }
 .registro {
   text-align: end;
@@ -97,6 +95,15 @@ body {
   width: 100px;
   height: 100px;
   mix-blend-mode: multiply;
+  rotate: rotate, linear, 3s, infinite;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 .logo-titulo .titulo-encabezado {
   display: flex;
@@ -175,7 +182,7 @@ body {
   box-shadow: 5px 2px 2px;
 }
 
-.caja-productos button {
+.caja-productos button, .cont button {
   background-color: hsla(0deg, 1%, 65%, 0.502);
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -187,13 +194,13 @@ body {
   box-shadow: 10px 10px 10px;
 }
 
-.caja-productos {
+.caja-productos, .cont {
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: "Overpass";
 }
-.caja-productos:hover {
+.caja-productos:hover, .cont:hover {
   transform: scale(1.2);
   transition: 0.5s;
 }
@@ -205,7 +212,7 @@ body {
 }
 
 @media (min-width: 576px) {
-  .caja-productos button {
+  .caja-productos button, .cont button {
     width: 230px;
     height: 250px;
   }
@@ -220,9 +227,6 @@ body {
     height: 180px;
   }
 }
-
-
-/* ------seccion pagina quienes somos----- */
 .titulo-quienes {
   text-align: center;
   font-family: "Overpass";
@@ -243,13 +247,13 @@ body {
 .parrafo-1 {
   text-align: center;
   color: white;
-  padding: 15px;
+  padding: 24px;
 }
 
 .parrafo-2 {
   text-align: center;
   color: white;
-  padding: 15px;
+  padding: 24px;
 }
 
 .video-somos {
@@ -258,6 +262,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+section .row.prueba {
+  width: 600px;
+}
+section .row.prueba img.fotito {
+  width: 600px;
 }
 
 .titulo-2 {
@@ -270,7 +281,7 @@ body {
   border-radius: 15px;
   box-shadow: 5px 2px 2px;
 }
-/* ------seccion pagina productos------ */
+
 .caja {
   display: flex;
   flex-direction: column;
@@ -303,7 +314,7 @@ body {
 }
 
 .img-p {
-  object-fit: cover;
+  object-fit: unset;
   width: 230px;
   height: 140px;
   border-radius: 15px;
@@ -322,12 +333,75 @@ body {
     margin: 10px;
   }
 }
+.cont figure {
+  position: relative;
+  height: 100%;
+  cursor: pointer;
+  width: 100%;
+  overflow: hidden;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-right: groove;
+}
+.cont figure:hover > img {
+  transform: scale(1.3);
+}
+.cont figure:hover > .capa h3 {
+  margin-top: 70px;
+  margin-bottom: 15px;
+}
+.cont figure:hover > .capa {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cont figure img {
+  width: 230px;
+  height: 250px;
+  transition: all 400ms ease-out;
+  will-change: transform;
+}
+
+.cont figure .capa {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 103, 123, 0.7);
+  transition: all 400ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+
+.cont figure .capa .t-index {
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 120px;
+  transition: all 400ms ease-out;
+  margin-top: 30px;
+}
+
+.cont figure .capa p {
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.5;
+  width: 100%;
+  max-width: 220px;
+  margin: auto;
+}
+
+@media (max-width: 575px) {
+  .cont {
+    display: none;
+  }
+}
 .ilustracion {
   width: 150px;
   height: 150px;
   mix-blend-mode: multiply;
 }
-/* ------seccion pagina como-comprar------ */
+
 .instrucciones {
   display: flex;
   flex-direction: column;
@@ -367,8 +441,6 @@ body {
     width: 50%;
   }
 }
-
-/* ------seccion pagina contacto----- */
 main .contacto {
   text-align: center;
   display: flex;
@@ -401,9 +473,6 @@ label {
     font-size: x-small;
   }
 }
-
-
-/* -------seccion pagina registro----- */
 .contenedor-registro {
   display: flex;
   flex-direction: column;

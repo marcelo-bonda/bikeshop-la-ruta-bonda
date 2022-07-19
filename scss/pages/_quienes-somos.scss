@@ -10,13 +10,13 @@
 .parrafo-1{
     text-align: center;
     color: white;
-    padding: 15px;
+    padding: 24px;
 }
 
 .parrafo-2{
     text-align: center;
     color: white;
-    padding: 15px;
+    padding: 24px;
 }
 .video-somos{
     width: 300px;
@@ -24,4 +24,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+section .row.prueba{
+    width: 600px;
+        img.fotito{
+            width: 600px;
+        }
 }

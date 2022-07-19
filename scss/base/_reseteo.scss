@@ -35,6 +35,17 @@ p{
 
 }
 
+
+@mixin animate ($animation,$method,$duration,$times) {
+    rotate: $animation,$method, $duration,$times;
+}
+@mixin keyframes($animate){
+    @keyframes #{$animate}{
+        @content;
+    }
+}
+
+
 ul {
     list-style-type: none;
 
