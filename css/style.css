@@ -95,14 +95,14 @@ body {
   width: 100px;
   height: 100px;
   mix-blend-mode: multiply;
-  rotate: rotate, linear, 3s, infinite;
+  animation: rotate, linear, 3s, infinite;
 }
 @keyframes rotate {
   from {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
   }
 }
 .logo-titulo .titulo-encabezado {
@@ -227,6 +227,27 @@ body {
     height: 180px;
   }
 }
+.mapa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mapa h2 {
+  text-align: center;
+  font-family: "Overpass";
+  font-size: 2.5rem;
+  color: white;
+  margin: 40px;
+  border: solid 2px;
+  border-radius: 15px;
+  box-shadow: 5px 2px 2px;
+}
+
+.mapa iframe {
+  width: 100%;
+  max-width: 1000px;
+}
+
 .titulo-quienes {
   text-align: center;
   font-family: "Overpass";
@@ -262,13 +283,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-section .row.prueba {
-  width: 600px;
-}
-section .row.prueba img.fotito {
-  width: 600px;
 }
 
 .titulo-2 {
