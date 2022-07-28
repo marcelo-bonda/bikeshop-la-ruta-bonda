@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   box-sizing: border-box;
   margin: 0%;
@@ -95,14 +96,14 @@ body {
   width: 100px;
   height: 100px;
   mix-blend-mode: multiply;
-  animation: rotate, linear, 3s, infinite;
+  transform-origin: 50% 50%;
 }
 @keyframes rotate {
   from {
-    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 .logo-titulo .titulo-encabezado {
@@ -285,68 +286,7 @@ body {
   align-items: center;
 }
 
-.titulo-2 {
-  text-align: center;
-  font-family: "Overpass";
-  font-size: 2.5rem;
-  color: white;
-  margin: 40px;
-  border: solid 2px;
-  border-radius: 15px;
-  box-shadow: 5px 2px 2px;
-}
-
-.caja {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  border-style: outset;
-  width: 250px;
-  height: 280px;
-  margin-top: 20px;
-  text-align: center;
-  font-size: x-large;
-  border-radius: 15px;
-  box-shadow: 5px 5px 2px black;
-  color: white;
-}
-.caja:hover {
-  transform: scale(1.5);
-  transition: 0.7s;
-  background-color: rgb(64, 35, 138);
-}
-.caja .carrito {
-  max-width: 50px;
-  max-height: 50px;
-}
-
-.contenedor-productos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.img-p {
-  object-fit: unset;
-  width: 230px;
-  height: 140px;
-  border-radius: 15px;
-}
-
-@media (min-width: 575px) {
-  .contenedor-productos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  .caja {
-    font-family: "Overpass";
-    width: 270px;
-    height: 330px;
-    margin: 10px;
-  }
-}
+/*-----diseño de indice------ */
 .cont figure {
   position: relative;
   height: 100%;
@@ -405,9 +345,119 @@ body {
   margin: auto;
 }
 
+.titulo-2 {
+  text-align: center;
+  font-family: "Overpass";
+  font-size: 2.5rem;
+  color: white;
+  margin: 40px;
+  border: solid 2px;
+  border-radius: 15px;
+  box-shadow: 5px 2px 2px;
+}
+
+/* estilos para las cajas contenedoras de cards*/
+.contenedor-box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* estilos para las cards de productos*/
+.box {
+  width: 260px;
+  height: 300px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-style: outset;
+  text-align: center;
+  font-size: x-large;
+  border-radius: 15px;
+  box-shadow: 5px 5px 2px black;
+  color: white;
+}
+.box img {
+  object-fit: unset;
+  width: 230px;
+  height: 140px;
+  border-radius: 15px;
+}
+
+/* lightbox sin abrir */
+.lightbox {
+  display: none;
+}
+
+/* lightbox abierto */
+.lightbox:target {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contenido de Lightbox */
+.lightbox figcaption {
+  position: relative;
+  background: rgba(44, 37, 43, 0.674);
+  background-size: cover;
+  color: white;
+}
+
+/* Botón Cerrar */
+.lightbox .close {
+  position: relative;
+  display: block;
+}
+
+.lightbox .close::after {
+  right: -1rem;
+  top: -1rem;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  display: flex;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  content: "×";
+  cursor: pointer;
+}
+
+/* superposición Lightbox */
+.lightbox .close::before {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  content: "";
+  cursor: default;
+}
+
+figure img {
+  width: 100%;
+  max-width: 850px;
+}
+
 @media (max-width: 575px) {
   .cont {
     display: none;
+  }
+  .lightbox figure {
+    font-size: small;
   }
 }
 .ilustracion {

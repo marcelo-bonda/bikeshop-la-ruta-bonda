@@ -45,8 +45,8 @@
         width: 100px;
         height: 100px;
         mix-blend-mode: multiply;        
-        @include keyframes(rotate){from {-webkit-transform: rotate(0deg)}to {-webkit-transform: rotate(360deg)}};
-        @include animate(rotate,linear,3s,infinite);
+        @include keyframes(rotate){from {transform: rotate(0deg)}to {transform: rotate(360deg)}};
+        transform-origin: 50% 50%;
     }
 
     .titulo-encabezado {

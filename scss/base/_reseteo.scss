@@ -44,9 +44,7 @@ p{
         @content;
     }
 }
-@mixin transformacion ($webkit-transform-origin) {
-    -webkit-transform: $webkit-transform-rogin;
-}
+
 
 ul {
     list-style-type: none;
