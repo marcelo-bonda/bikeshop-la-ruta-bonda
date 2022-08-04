@@ -2,7 +2,8 @@
 .ilustracion{
     width: 150px;
     height: 150px;
-    mix-blend-mode: multiply;
+    mix-blend-mode: hard-light;
+    border-radius: 15px
 }
 
 .instrucciones{
@@ -21,7 +22,7 @@
     width: 80%;
     .titulo-pf{
         margin: 40px;
-        color:$c-terciaro;
+        color:$c-terciario;
         text-align: center;
     }
 }
@@ -42,3 +43,4 @@
     }
     
 }
+

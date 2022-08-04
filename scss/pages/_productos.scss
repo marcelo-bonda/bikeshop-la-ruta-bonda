@@ -1,40 +1,9 @@
 
+a {
+    text-decoration: none;
+    color: $c-secundario;
+    font-family: map-get($fuentes, secundaria );
 }
-
-.cont figure .capa {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 103, 123, 0.7);
-    transition: all 400ms ease-out;
-    opacity: 0;
-    visibility: hidden;
-    text-align: center;
-}
-
-
-.cont figure .capa .t-index {
-    color: #fff;
-    font-weight: 400;
-    margin-bottom: 120px;
-    transition: all 400ms ease-out;
-    margin-top: 30px;
-}
-
-.cont figure .capa p {
-    color: #fff;
-    font-size: 15px;
-    line-height: 1.5;
-    width: 100%;
-    max-width: 220px;
-    margin: auto;
-}
-
-.titulo-2 {
-    @include titulo-2;
-}
-
 /* estilos para las cajas contenedoras de cards*/
 
 .contenedor-box {
@@ -128,18 +97,18 @@
     cursor: default;
 }
 
-figure img{
+    figcaption img{
     width: 100%;
-    max-width: 850px;
+    max-width: 800px;
+    height: 100%;
+    max-height: 500px;
 }
 
 
 @media (max-width:575px) {
-    .cont {
-        display: none;
-    }
+
 
     .lightbox figure{
-        font-size: small;
+        font-size: smaller;
 }
 }

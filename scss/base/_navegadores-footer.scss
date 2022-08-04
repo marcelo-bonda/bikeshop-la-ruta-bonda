@@ -5,7 +5,9 @@
 
 }
 
-
+.dropdown-toggle{
+    font-size: small;
+}
 .navegador-largo {
     background-color: black;
     text-align: center;
@@ -67,6 +69,7 @@
 
     .titulo-foot {
         margin: 20px;
+        color: $c-secundario;
     }
 
     .redes a i {

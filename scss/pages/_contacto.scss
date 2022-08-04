@@ -1,3 +1,7 @@
+.horario {
+    text-align: center;
+    color:$c-terciario;
+}
 main .contacto {
     text-align: center;
     display: flex;
@@ -7,7 +11,8 @@ main .contacto {
     margin-top: 50px;
     color: $c-secundario;
     height: 100%;
-    width: 70%;
+    width: 90%;
+    max-width: 900px;
     border:solid 2px ;
     border-radius: 15px;
     font-family: map-get($fuentes, secundaria );
@@ -25,9 +30,16 @@ label{
     color:$c-secundario;
 }
 
+.noticias{
+    display:flex;
+    flex-direction: row;
+}
 @media (max-width:576px) {
-    .contacto{
-        font-size:x-small;
+    .contacto label{
+        font-size:medium;
+    }
+    input{
+        font-size:medium ;
     }
     
     

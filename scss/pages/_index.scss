@@ -4,6 +4,85 @@
     height: 400px;
 }
 
+/*-----diseño de indice------ */
+
+.cont {
+    @extend .caja-productos;
+
+}
+
+.cont figure {
+    position: relative;
+    height: 100%;
+    cursor: pointer;
+    width: 100%;
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-right: groove;
+
+    &:hover>img {
+        transform: scale(1.1);
+        
+    }
+
+    &:hover>.capa h3 {
+        margin-top: 70px;
+        margin-bottom: 15px;
+    }
+
+    &:hover>.capa {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.cont figure img {
+    width: 230px;
+    height: 250px;
+    transition: all 400ms ease-out;
+    will-change: transform;
+
+}
+
+.cont figure .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(38, 40, 41, 0.7);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+
+.cont figure .capa .t-index {
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 400ms ease-out;
+    margin-top: 30px;
+}
+
+.cont figure .capa p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto;
+}
+
+.titulo-2 {
+    @include titulo-2;
+}
+
+
+
+
+
 @media (min-width:576px) {
     .caja-productos button {
         width: 230px;

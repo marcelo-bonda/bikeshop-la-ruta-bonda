@@ -1,8 +1,13 @@
-.titulo-quienes{
+.titulo-quienes {
     @include titulo-2;
 }
 
-.imagen-salon{
+
+body {
+    font-family: map-get($fuentes, secundaria);
+}
+
+.taza {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,71 +15,87 @@
     img {
         width: 100%;
         max-width: 400px;
-}
-.parrafo-1{
-    text-align: center;
-    color: white;
-    padding: 24px;
-}
-
-.parrafo-2{
-    text-align: center;
-    color: white;
-    padding: 24px;
-}
-.video-somos{
-    width: 300px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.mapa {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    h2 {
-        @include titulo-2;
     }
-
 }
 
-.mapa iframe {
-    width: 100%;
-    max-width: 1000px;
-
+.historia p {
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
 }
+
+@media (min-width:900px) {
+    .historia p {
+        text-align: center;
+        font-size: large;
+    }
+}
+
+.parrafo-1 {
+    text-align: center;
+    color: white;
+    padding: 24px;
+    padding-top: 0;
+}
+
+.parrafo-2 {
+    text-align: center;
+    color: white;
+    padding: 24px;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+    iframe {
+        width: 100%;
+        max-width: 560px;
+    }
+}
+
+@media (max-width:560px) {
+    .video iframe {
+        height: 200px;
+    }
+}
+
 
 .galeria-1 img {
     border-radius: 15px;
-    margin-top: 20px;
+
 }
 
 .presentacion {
     background-color: #f8f9fa63;
     border-radius: 15px;
-    margin-top: 20px;
-    font-family: map-get($fuentes, secundaria );
+    font-family: map-get($fuentes, secundaria);
     color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     text-align: center;
-    max-width: 500px;
-    min-height: 280px;
+    max-width: 400px;
+    min-height: 180px;
+
+
     h3 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
-    p{
+
+    p {
         font-size: 1rem;
     }
 }
 
-
+.presentacion:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
 
 
 .alineacion {
@@ -82,6 +103,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 25px;
+
 }
 
 .felt-roja {
@@ -89,29 +112,26 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 20px;
+
+    &:hover img {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+
+
 
     img {
         max-height: 420px;
         width: 100%;
-        max-width: 650px;
-        margin: 10px;
+        max-width: 600px;
     }
 
 }
 
 
 .felt-azul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    img {
-        max-height: 510px;
-        width: 100%;
-        max-width: 650px;
-        margin: 10px;
-    }
+    @extend .felt-roja;
 }
 
 .trabajo {
@@ -119,10 +139,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 40px;
+
+    &:hover img {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
 
     img {
         width: 100%;
-        max-width: 650px;
+        max-width: 600px;
         margin: 10px;
     }
 
@@ -130,18 +156,7 @@
 }
 
 .cervelo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    img {
-        max-height: 510px;
-        width: 100%;
-        max-width: 650px;
-        margin: 10px;
-    }
-
+    @extend .felt-roja;
 }
 
 .desarme {
@@ -149,39 +164,106 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin: 30px;
+
+    &:hover img {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
 
     img {
         max-height: 410px;
         width: 100%;
-        max-width: 1300px;
-        margin: 10px;
+        max-width: 1040px;
     }
 
 }
 
+@media (min-width:970px) {
+    .desarme {
+        margin: 10px;
+    }
+
+    .desarme img {
+        width: 100%;
+        max-width: 1200px;
+    }
+}
+
+/*------------galeria-2---------------*/
+
+
+.galeria-2 img {
+    border-radius: 15px;
+}
+
+.m-roja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+
+    &:hover img {
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+
+    img {
+        max-height: 400px;
+        width: 100%;
+        max-width: 400px;
+        margin: 10px;
+    }
+}
+
+.c-verde {
+    @extend.m-roja;
+}
+
+.c-blanco {
+    @extend .m-roja;
+}
+
+.colage {
+    @extend .m-roja;
+}
+
+.rojo {
+    @extend.m-roja;
+}
+
+.violeta {
+    @extend.m-roja;
+}
+
 @media (min-width:760px) {
+
+    /*----------galeria 1-------------- */
     .galeria-1 {
         display: grid;
         align-items: flex-start;
-        margin-top: 20px;
+        margin: 30px;
+
         grid-template-columns: 50% 50%;
-        grid-template-rows: 1fr 1fr 1/2fr 2fr;
+        grid-template-rows: auto;
         grid-template-areas:
             "titulo felt-roja"
             "felt-azul trabajo"
             "cervelo trabajo"
             "desarme desarme";
-        gap: 10px;
-
+        gap: 20px;
     }
+
 
     .presentacion {
         grid-area: titulo;
         margin: 0;
+
         h3 {
             font-size: 2.5rem;
         }
-        p{
+
+        p {
             font-size: 1.5rem;
         }
 
@@ -196,6 +278,7 @@
 
     .felt-roja {
         grid-area: felt-roja;
+
     }
 
     .felt-azul {
@@ -204,18 +287,77 @@
 
     .trabajo {
         grid-area: trabajo;
+        margin: 10px;
     }
 
     .cervelo {
         grid-area: cervelo;
+
     }
 
     .desarme {
         grid-area: desarme;
     }
 
+    /*----------galeria 2-------------- */
+
+    .galeria-2 {
+        margin: 20px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "m-roja presentacion"
+            "c-verde c-blanco"
+            "colage colage"
+            "rojo violeta";
+
+
+        .m-roja {
+            grid-area: m-roja;
+
+            img {
+                max-width: 500px;
+                max-height: 500px;
+            }
+        }
+
+        .presentacion {
+            grid-area: presentacion;
+        }
+
+        .c-verde {
+            grid-area: c-verde;
+        }
+
+        .c-blanco {
+            grid-area: c-blanco;
+        }
+
+        .colage {
+            grid-area: colage;
+
+            img {
+                object-fit: cover;
+            }
+        }
+
+        .rojo {
+            grid-area: rojo;
+
+            img {
+                max-height: 450px;
+                margin: 0%;
+            }
+        }
+
+        .violeta {
+            grid-area: violeta;
+
+            img {
+                max-height: 450px;
+                margin: 0%;
+            }
+        }
+    }
 }
-
-
-
-
