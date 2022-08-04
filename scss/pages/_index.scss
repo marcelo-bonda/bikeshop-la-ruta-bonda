@@ -30,18 +30,3 @@
 }
 
 
-.mapa {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    h2{
-        @include titulo-2;
-    }
-
-}
-
-.mapa iframe{
-    width: 100%;
-    max-width: 1000px;
-
-}
