@@ -195,8 +195,8 @@ body {
   border-right: groove;
   margin-top: 40px;
   font-size: 20px;
-  width: 180px;
-  height: 200px;
+  width: 230px;
+  height: 250px;
   box-shadow: 10px 10px 10px;
 }
 
@@ -211,6 +211,29 @@ body {
   transition: 0.3s;
 }
 
+.bloque-portada {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.bloque-portada .contenido {
+  color: white;
+  text-align: center;
+}
+.bloque-portada .triatlon img {
+  width: 100%;
+  max-width: 600px;
+  min-height: 150p;
+}
+
+@media (max-width: 680px) {
+  .contenido h3 {
+    font-size: medium;
+  }
+  .contenido h3 h2 {
+    font-size: medium;
+  }
+}
 .carrusel img {
   margin-top: 40px;
   width: 100%;
@@ -287,12 +310,6 @@ body {
   box-shadow: 5px 2px 2px;
 }
 
-@media (min-width: 576px) {
-  .caja-productos button, .cont button {
-    width: 230px;
-    height: 250px;
-  }
-}
 @media (max-width: 700px) {
   .salon {
     width: 200px;

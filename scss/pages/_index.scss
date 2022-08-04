@@ -1,8 +1,35 @@
-.carrusel img {
+
+.bloque-portada{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .contenido{
+        color: $c-secundario;
+        text-align: center;
+    }
+    .triatlon img{
+        width: 100%;
+        max-width: 600px;
+        min-height: 150p
+    }
+}
+
+@media (max-width:680px) {
+    .contenido h3{
+        font-size: medium;
+        h2{
+            font-size: medium;
+        }
+    }
+}
+
+.carrusel 
+img {
     margin-top: 40px;
     width: 100%;
     height: 400px;
 }
+
 
 /*-----diseño de indice------ */
 
@@ -77,18 +104,6 @@
 
 .titulo-2 {
     @include titulo-2;
-}
-
-
-
-
-
-@media (min-width:576px) {
-    .caja-productos button {
-        width: 230px;
-        height: 250px;
-    }
-
 }
 
 
