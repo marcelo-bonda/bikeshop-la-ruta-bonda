@@ -37,7 +37,11 @@
     background-size: cover;
 }
 
-
+@media (min-width:971px) {
+    .contenedor-2{
+        display: none;
+    }
+}
 
 .logo-titulo {
     @include d-flex(row,center );
