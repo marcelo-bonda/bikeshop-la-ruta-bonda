@@ -1,3 +1,5 @@
+/*-------------------------diseño formulario----------------*/
+
 .contenedor-registro {
     @include d-flex (column, center);
     font-family: map-get($fuentes, secundaria);
@@ -23,6 +25,7 @@
     @include titulo-2;
     @include d-flex(column, center);
     width: 80%;
+    background-color: #e9ecef6d;
 }
 
 @media (min-width:900px) {

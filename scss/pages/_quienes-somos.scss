@@ -1,3 +1,7 @@
+
+/*--------------------bloque historia--------------------*/
+
+
 .titulo-quienes {
     @include titulo-2;
 }
@@ -5,6 +9,9 @@
 
 body {
     font-family: map-get($fuentes, secundaria);
+}
+.titulo-2 {
+    @include titulo-2;
 }
 
 .taza {
@@ -62,7 +69,7 @@ body {
         height: 200px;
     }
 }
-
+/*---------------------------galeria 1---------------------*/
 
 .galeria-1 img {
     border-radius: 15px;
@@ -181,16 +188,20 @@ body {
 
 @media (min-width:970px) {
     .desarme {
-        margin: 10px;
+        margin: 15px;
     }
 
     .desarme img {
         width: 100%;
-        max-width: 1200px;
+        max-width: 800px;
     }
 }
-
-/*------------galeria-2---------------*/
+@media (min-width:1200px) {
+    .desarme img{
+        max-width: 1000px;
+    }
+}
+/*------------------------------galeria-2------------------------------*/
 
 
 .galeria-2 img {
@@ -238,7 +249,7 @@ body {
 
 @media (min-width:760px) {
 
-    /*----------galeria 1-------------- */
+    /*---------- media query galeria 1-------------- */
     .galeria-1 {
         display: grid;
         align-items: flex-start;
@@ -299,7 +310,7 @@ body {
         grid-area: desarme;
     }
 
-    /*----------galeria 2-------------- */
+    /*---------- media query galeria 2-------------- */
 
     .galeria-2 {
         margin: 20px;

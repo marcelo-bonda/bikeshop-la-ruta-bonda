@@ -1,7 +1,11 @@
-.horario {
+/*-------------------------diseño formulario-------------------*/
+
+
+.contacto {
     text-align: center;
-    color:$c-terciario;
+    color: $c-terciario;
 }
+
 main .contacto {
     text-align: center;
     display: flex;
@@ -13,34 +17,37 @@ main .contacto {
     height: 100%;
     width: 90%;
     max-width: 900px;
-    border:solid 2px ;
+    border: solid 2px;
     border-radius: 15px;
-    font-family: map-get($fuentes, secundaria );
+    font-family: map-get($fuentes, secundaria);
 
 }
-label{
+
+label {
     padding: 10px;
     font-size: x-large;
 }
 
-.subtitulo{
+.subtitulo {
     margin-top: 80px;
     text-align: center;
-    font-family: map-get($fuentes, secundaria );
-    color:$c-secundario;
+    font-family: map-get($fuentes, secundaria);
+    color: $c-secundario;
 }
 
-.noticias{
-    display:flex;
+.noticias {
+    display: flex;
     flex-direction: row;
 }
+
 @media (max-width:576px) {
-    .contacto label{
-        font-size:medium;
+    .contacto label {
+        font-size: medium;
     }
-    input{
-        font-size:medium ;
+
+    input {
+        font-size: medium;
     }
-    
-    
+
+
 }
