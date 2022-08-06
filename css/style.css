@@ -882,6 +882,14 @@ input {
   background-color: white;
 }
 
+select {
+  background-color: white;
+}
+
+textarea {
+  background-color: white;
+}
+
 .subtitulo {
   margin-top: 80px;
   text-align: center;
