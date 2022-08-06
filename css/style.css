@@ -878,6 +878,10 @@ label {
   font-size: x-large;
 }
 
+input {
+  background-color: white;
+}
+
 .subtitulo {
   margin-top: 80px;
   text-align: center;
