@@ -193,29 +193,6 @@ body {
   box-shadow: 5px 2px 2px;
 }
 
-.caja-productos button {
-  background-color: hsla(0deg, 1%, 65%, 0.502);
-  border-top-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  border-right: groove;
-  margin-top: 40px;
-  font-size: 20px;
-  width: 230px;
-  height: 250px;
-  box-shadow: 10px 10px 10px;
-}
-
-.caja-productos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: "Overpass";
-}
-.caja-productos:hover {
-  transform: scale(1.1);
-  transition: 0.3s;
-}
-
 /*------------------- bloque slogan e imagen ------------*/
 .bloque-portada {
   display: flex;
@@ -608,7 +585,7 @@ body {
 }
 
 @media (min-width: 760px) {
-  /*---------- media query galeria 1-------------- */
+  /*---------- media queries galeria 1-------------- */
   .galeria-1 {
     display: grid;
     align-items: flex-start;
@@ -649,7 +626,7 @@ body {
   .desarme {
     grid-area: desarme;
   }
-  /*---------- media query galeria 2-------------- */
+  /*---------- media queries galeria 2-------------- */
   .galeria-2 {
     margin: 20px;
     display: grid;
