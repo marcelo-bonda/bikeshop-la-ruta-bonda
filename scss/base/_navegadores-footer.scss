@@ -37,11 +37,7 @@
     background-size: cover;
 }
 
-@media (min-width:971px) {
-    .contenedor-2{
-        display: none;
-    }
-}
+
 
 .logo-titulo {
     @include d-flex(row,center );
@@ -51,8 +47,7 @@
         width: 100px;
         height: 100px;
         mix-blend-mode: multiply;        
-        @include keyframes(rotate){from {transform: rotate(0deg)}to {transform: rotate(360deg)}};
-        transform-origin: 50% 50%;
+        
     }
 
     .titulo-encabezado {

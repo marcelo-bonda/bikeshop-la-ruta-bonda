@@ -91,11 +91,6 @@ body {
   background-size: cover;
 }
 
-@media (min-width: 971px) {
-  .contenedor-2 {
-    display: none;
-  }
-}
 .logo-titulo {
   display: flex;
   flex-direction: row;
@@ -105,15 +100,6 @@ body {
   width: 100px;
   height: 100px;
   mix-blend-mode: multiply;
-  transform-origin: 50% 50%;
-}
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 .logo-titulo .titulo-encabezado {
   display: flex;
